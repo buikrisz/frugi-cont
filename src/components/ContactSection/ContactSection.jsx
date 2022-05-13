@@ -21,14 +21,12 @@ function ContactSection() {
                 </div>
             </div>
             <div className='formInfo'>
-                <ContactServicesCard type="pest" setFormData={setFormData} />
                 {!formSubmitted ? <ContactForm setFormSubmitted={setFormSubmitted} formData={formData} setFormData={setFormData} />
                 :
                 <form>
                     <h2 className='confirmationTxt'>Köszönjük!<br/><br/> Munkatársunk 24 órán belül válaszolni fog üzenetére!</h2>
                 </form>
                 }
-                <ContactServicesCard type="ozone" setFormData={setFormData} />
             </div>
         </section>
     )

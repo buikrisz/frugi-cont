@@ -13,10 +13,10 @@
     transition: 0.5s;
 }
 
-.serviceCard:hover {
+/* .serviceCard:hover {
     cursor: pointer;
     transform: scale(1.05);
-}
+} */
 
 .serviceCard img {
     height: 100px;
@@ -24,6 +24,12 @@
 }
 
 .serviceCard h4 {
+    width: 90%;
+    height: 50px;
     font-size: 20px;
     text-align: center;
+}
+
+.serviceCard button:hover {
+    text-decoration: underline;
 }

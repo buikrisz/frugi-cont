@@ -27,11 +27,17 @@ function Header() {
                     }}>Ózonos fertőtlenítés</h4>
                 </NavLink>
             </div>
-            <div>
-                <h4>+36-70-338-4734</h4>
-                <span>|</span>
-                <h4>eradicatedpest@gmail.com</h4>
-            </div>
+            <nav>
+                {
+                    // different routes
+                    <ul>
+                        <a href="#landingSection"><li>Kezdőlap</li></a>
+                        <a href="#chooseUs"><li>Rólunk</li></a>
+                        <a href="#services"><li>Szolgáltatások</li></a>
+                        <a href="#contactSection"><li>Kapcsolat</li></a>
+                    </ul>
+                }
+            </nav>
         </header>
     )
 }

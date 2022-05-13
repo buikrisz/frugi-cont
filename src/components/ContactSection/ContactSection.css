@@ -60,7 +60,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-image: url("../../../public/images/contact_bg.jpg");
+    background-image: url("../../images/contact_bg.jpg");
     background-size: cover;
 }
 
@@ -114,7 +114,7 @@
     gap: 20px;
 }
 
-#contactSection .formInfo form input, #contactSection form textarea {
+#contactSection .formInfo form input, #contactSection form textarea, #contactSection .formInfo form select {
     background-color: #fff;
     padding-left: 20px;
     border: 1px solid rgb(200, 200, 200);
@@ -125,6 +125,20 @@
 #contactSection .formInfo form input {
     height: 60px;
     width: 350px;
+}
+
+#contactSection .formInfo form select {
+    height: 60px;
+    width: 350px;
+    cursor: pointer;
+}
+
+#contactSection .formInfo form select.selected {
+    color: #010252;
+}
+
+#contactSection .formInfo form select.unselected {
+    color: #c0c1c1;
 }
 
 #contactSection .formInfo form textarea {
@@ -222,11 +236,11 @@
         gap: 15px;
     }
 
-    #contactSection .formInfo form input, #contactSection form textarea {
+    #contactSection .formInfo form input, #contactSection form textarea, #contactSection .formInfo form select {
         font-size: 16px;
     }
     
-    #contactSection .formInfo form input {
+    #contactSection .formInfo form input, #contactSection .formInfo form select {
         height: 50px;
         width: 155px;
     }

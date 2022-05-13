@@ -26,8 +26,10 @@
 }
 
 .serviceDetails h6 {
+    height: 250px;
     width: 700px;
-    font-size: 22px;
+    overflow-y: scroll;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -60,7 +62,6 @@
 @media (max-width: 400px) {  
     .serviceDetails {
         gap: 20px;
-        height: 550px;
         width: 325px;
     }
     
