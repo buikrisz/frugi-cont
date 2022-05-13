@@ -4,7 +4,7 @@ function ContactForm({ setFormSubmitted, formData, setFormData }) {
     function handleChange(e) {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
-    console.log(formData);
+
     return (
         <form onSubmit={(e) => {
             e.preventDefault();
@@ -17,7 +17,6 @@ function ContactForm({ setFormSubmitted, formData, setFormData }) {
             </div>
             <div>
                 <input type="text" name="contactMail" id="contactMail" placeholder='E-mail' value={formData.contactMail} onChange={handleChange} required />
-                {/* <input type="text" name="contactService" id="contactService" placeholder='Szolgáltatás' value={formData.contactService} onChange={handleChange} required /> */}
                 <select name="contactService" id="contactService" defaultValue="" className={formData.contactService === "" ? "unselected" : "selected"} onChange={handleChange}>
                     <option value="" disabled hidden>Válasszon szolgáltatást...</option>
                     <option value="agyipoloskairtas">Ágyi poloska irtás</option>

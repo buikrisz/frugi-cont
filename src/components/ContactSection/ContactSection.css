@@ -232,6 +232,10 @@
         height: unset;
     }
     
+    #contactSection .formInfo form h2 {
+        text-align: center;
+    }
+    
     #contactSection .formInfo form div{
         gap: 15px;
     }
