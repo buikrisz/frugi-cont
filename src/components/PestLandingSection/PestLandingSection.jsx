@@ -1,6 +1,7 @@
 import React from 'react';
 import { LandingForm } from '..';
 import './PestLandingSection.css';
+import image from '../../images/pest_control.png';
 
 function LandingSection() {
     return (
@@ -16,7 +17,7 @@ function LandingSection() {
             <div className='landingContent'>
                 <div>
                     <h2>Lakások védelme a váratlan betolakodóktól</h2>
-                    <img src="./images/pest_control.png" alt="Pest Control" />
+                    <img src={image} alt="Pest Control" />
                 </div>
                 <LandingForm />
             </div>
